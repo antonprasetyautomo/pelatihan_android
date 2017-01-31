@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.d2j_00.anton_android.MainActivity">
+    tools:context="com.example.d2j_00.anton_android.MainActivity"
+    android:background="@drawable/aaa">
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
         android:textSize="18dp"
         android:textAlignment="center"
         android:textColor="#f40808"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -28,7 +29,6 @@
         android:textSize="18dp"
         android:textAlignment="center"
         android:textColor="#0a0efb"
-        android:layout_marginTop="18dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
@@ -37,7 +37,7 @@
         android:layout_height="150dp"
         android:id="@+id/imageView"
         android:src="@drawable/akku"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="62dp"
         android:layout_below="@+id/textView"
         android:layout_toEndOf="@+id/textView2" />
 
@@ -49,17 +49,18 @@
         android:layout_alignTop="@+id/imageView"
         android:layout_alignParentStart="true"
         android:textSize="16dp"
-        android:textColor="#f88a0c" />
+        android:textColor="#f80c28" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="Bergeraklah,karena disitulah terdapat keberhasilan"
         android:id="@+id/textView4"
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_marginTop="17dp"
-        android:textSize="14dp" />
+        android:textSize="14dp"
+        android:textColor="#0a0af9" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,15 +71,26 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="26dp"
         android:textSize="16dp"
-        android:textColor="#f4b108" />
+        android:textColor="#f80f32" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Masuk Surga dengan orang tercinta"
         android:id="@+id/textView6"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="17dp"
-        android:textSize="14dp" />
+        android:textSize="14dp"
+        android:textColor="#0a39f3"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIODATA DIRI"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f70af7"
+        android:textSize="18dp" />
+
 </RelativeLayout>
