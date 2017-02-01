@@ -19,10 +19,21 @@ public class MainActivity extends AppCompatActivity {
         addSeparate();
 
         initBarang();
-        showString+= arrBarang[5].toString();
-        addSeparate();
-        showString += arrBarang[1].toString();
+     //   showString+= arrBarang[5].toString();
+     //   addSeparate();
+     //   showString += arrBarang[1].toString();
         showText.setText(showString);
+
+            transaksi trans1 = new transaksi();
+            trans1.addbarang(arrBarang[3]);
+        trans1.addbarang(arrBarang[6]);
+        trans1.addbarang(arrBarang[9]);
+        showString += trans1.printTransaksi();
+        showString += "rata-rata harga barang yang di beli"+
+                trans1.averageTransaksi();
+        showString += trans1.maxbarang();
+        showText.setText(showString);
+
     }
 
     public void addSeparate(){
