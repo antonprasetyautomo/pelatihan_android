@@ -11,10 +11,9 @@
     tools:context="com.example.d2j_00.aplikasi_keuangan.MainActivity">
 
     <TextView
-        android:id="@+id/main"
+        android:id="@+id/txtsaldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to The Jungle"
         android:textStyle="bold"
         android:textSize="20dp"/>
 
@@ -28,8 +27,8 @@
         android:layout_marginTop="20dp"
         android:onClick="addTransaksi"/>
 
-    <TextView
-        android:id="@+id/txt_show"
+    <ListView
+        android:id="@+id/List_transaksi"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

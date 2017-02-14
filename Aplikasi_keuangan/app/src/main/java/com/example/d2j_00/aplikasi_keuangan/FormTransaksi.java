@@ -22,14 +22,14 @@ public class FormTransaksi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_transaksi);
 
-        spnJenis = (Spinner) findViewById(R.id.jenis);
+        spnJenis = (Spinner) findViewById(R.id.spn_jenis);
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, jenisStr);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnJenis.setAdapter(adapter);
 
-        edtNama = (EditText) findViewById(R.id.nama);
-        edtJumlah = (EditText) findViewById(R.id.jumlah);
-        edtKeterangan = (EditText) findViewById(R.id.keterangan);
+        edtNama = (EditText) findViewById(R.id.edt_nama);
+        edtJumlah = (EditText) findViewById(R.id.edt_jumlah);
+        edtKeterangan = (EditText) findViewById(R.id.edt_keterangan);
     }
 
     public void tambah(View view){
